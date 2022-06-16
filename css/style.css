@@ -151,15 +151,3 @@ body {
     right: 20px;
     top: 15px;
 }
-
-.welcome ul li:hover ul {
-    display: block;
-}
-
-ul {
-    list-style: none;
-}
-
-.welcome ul li:hover {
-    visibility: hidden;
-}
