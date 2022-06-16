@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    transition: .2s;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.menu1 ul {
+    list-style: none;
+    position: relative;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.menu1 > ul::after {
+    display: block;
+    width: 100%;
+    height: 0px;
+    clear: both;
+    content: " ";
+}
+
+.menu1 ul li {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+.menu1 ul li a {
+    float: left;
+    padding: 12px 14px;
+    display: block;
+    color: #64b5f6;
+    font-size: 18px;
+}
+  
+footer a {
+    color: #212121;
+}
+
+
+.columns {
+    display: flex;
+}
+  
+.footer-column {
+    flex: 50%;
+    margin: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+body {
+	margin: 0;
+    background-color: white;
+}
+
+.center a::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #64b5f6;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+
+.center a:hover:before {
+    transform: scaleX(1);
+}
+
+.center a:active {
+    content: "";
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+#switchMode {
+    cursor: pointer;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    -webkit-appearance: none;
+    outline: none;
+    background: #64b5f6;
+    border-radius: 20px;
+    top: 5px;
+    right: 10px;
+    transition: .5s;
+}
+
+#switchMode:checked {
+    background: #1e88e5;
+}
+
+#switchMode:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transition: .5s;
+    transform: scale(0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 98;
+}
+
+#switchMode:checked:before {
+    left: 30px;
+    background: #212121;
+}
+
+
+.fa-moon {
+	color: #212121;
+    transform: scale(1.1);
+    position: absolute;
+    right: 50px;
+    top: 15px;
+}
+
+.fa-sun {
+	color: #fff;
+    transform: scale(1.1);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.welcome ul li:hover ul {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.welcome ul li:hover {
+    visibility: hidden;
+}
