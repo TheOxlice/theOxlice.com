@@ -14,11 +14,7 @@ body .menu1 {
     color: #64b5f6;
 }
 
-body footer {
-    background-color: #64b5f6;
-    color: #212121;
-    font-size: 15px;
-}
+body footer {color: #64b5f6;}
 
 body .welcome {
     background: linear-gradient(to bottom right, white 50%, #64b5f6 50%);
@@ -31,17 +27,18 @@ body .welcome {
 body .fragment {
     border-radius: 10px;
     background: white;
-    border-color: #64b5f6;
-    border-style: solid;
+    /*border-color: #64b5f6;
+    border-style: solid;*/
     padding: 10px;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 10px;
     z-index: 99;
-    -webkit-box-shadow: 30px 18px 0px 7px rgba(100,180,246,1);
-    -moz-box-shadow: 30px 18px 0px 7px rgba(100,180,246,1);
-    box-shadow: 30px 18px 0px 7px rgba(100,180,246,1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 17px 17px 0px 0px #64b5f6;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 17px 17px 0px 0px #64b5f6;
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 17px 17px 0px 0px #64b5f6;
 }
+
 
 body .shadow-box {
     height: 97px;
@@ -69,7 +66,7 @@ body center h1 {
     background: #64b5f6;
 }
 
-body .about-site {
+body .about-site-and-creator {
     border-width: 0; 
     padding-top: 50px;
     padding-bottom: 20px;
@@ -80,6 +77,7 @@ body .btn {
     top: 50px;
 	font-size: 20px;
 	color: #fff;
+    border: none;
 	background: #64b5f6;
 	text-decoration: none;
 	padding: 20px 70px;
@@ -94,7 +92,7 @@ body .btn:hover {
     color: #000;
 }
 
-body .about-site h1 {
+body .about-site-and-creator h1 {
     background: white;
     color: #000;
 }
@@ -103,13 +101,66 @@ body .welcome a {
     color: #000;
 }
 
-body .about-creator {
+body .contact-me {
     background: #fff;
 }
 
-body .about-creator h1 {
+body .contact-me a {
+    color: #000;
+}
+
+body .contact-me h1 {
     background: #fff;
     color: #000;
+}
+
+body main a:hover {
+    color: #64b5f6;
+}
+
+body .menu1 ul li a {
+    float: left;
+    padding: 12px 14px;
+    display: block;
+    color: #64b5f6;
+    font-size: 18px;
+}
+
+.center a::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #64b5f6;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+
+body .download-text h1, body .user-game h1 {
+    color: #000;
+}
+
+body .user-game h1 {
+    background: #fff;
+}
+
+body .user-game {
+    background: #fff;
+    color: #000;
+}
+
+body .form-group input, body .form-group textarea {
+    color: #000;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 5px 5px 0px 0px #64b5f6;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 5px 5px 0px 0px #64b5f6;
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 5px 5px 0px 0px #64b5f6;
+    border: none;
+    border-radius: 10px;
+    overflow: none;
+    resize: none;
 }
 
 /*тёмная тема*/
@@ -132,11 +183,7 @@ body.dark .welcome a {
     color: #fff;
 }
 
-body.dark footer {
-    background-color: #1e88e5;
-    color: #212121;
-    font-size: 15px;
-}
+body.dark footer {color: #1e88e5;}
 
 body.dark .welcome {
     background: linear-gradient(to bottom right, #212121 50%, #1e88e5 50%);
@@ -150,12 +197,12 @@ body.dark .fragment {
     border-radius: 10px;
     background: #212121;
     color: #f5f5f5;
-    border-color: #1e88e5;
-    border-style: solid;
+    /*border-color: #1e88e5;
+    border-style: solid;*/
     z-index: 99;
-    -webkit-box-shadow: 30px 18px 0px 7px rgba(30,136,229,1);
-    -moz-box-shadow: 30px 18px 0px 7px rgba(30,136,229,1);
-    box-shadow: 30px 18px 0px 7px rgba(30,136,229,1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 17px 17px 0px 0px #1e88e5;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 17px 17px 0px 0px #1e88e5;
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 17px 17px 0px 0px #1e88e5;
 }
 
 body.dark .shadow-box {
@@ -184,7 +231,7 @@ body.dark center h1 {
     background: #1e88e5;
 }
 
-body.dark .about-site {
+body.dark .about-site-and-creator {
     border-width: 0; 
     padding-top: 50px;
     padding-bottom: 20px;
@@ -195,6 +242,7 @@ body.dark .btn {
     position: relative;
     top: 50px;
 	font-size: 20px;
+    border: none;
 	color: #212121;
 	background: #1e88e5;
 	text-decoration: none;
@@ -210,21 +258,96 @@ body.dark .btn:hover {
     color: #f5f5f5;
 }
 
-body.dark img {
-    border-color: #fff;
-    border-style: solid;
-}
 
-body.dark .about-site h1 {
+body.dark .about-site-and-creator h1 {
     background-color: #212121;
     color: #f5f5f5;
 }
 
-body.dark .about-creator {
+body.dark .contact-me {
     background: #212121;
 }
 
-body.dark .about-creator h1 {
+body.dark .contact-me a {
+    color: #f5f5f5;
+}
+
+body.dark .contact-me h1 {
+    background: #212121;
+    color: #f5f5f5;
+}
+
+body.dark footer {
+    background: #212121;
+    color: #1e88e5;
+}
+
+body.dark main a:hover {
+    color: #1e88e5;
+}
+
+body.dark .menu1 ul li a {
+    float: left;
+    padding: 12px 14px;
+    display: block;
+    color: #1e88e5;
+    font-size: 18px;
+}
+
+.center a::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #1e88e5;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+
+body.dark .download-text, body.dark .user-game h1 {
+    color: #f5f5f5;
+}
+
+body.dark .user-game h1 {
+    background: #212121;
+}
+
+body.dark .user-game {
+    background: #212121;
+    color: #f5f5f5;
+}
+
+body.dark .form-group input, body.dark .form-group textarea {
+    color: #f5f5f5;
+    background: #212121;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5), 5px 5px 0px 0px #1e88e5;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 5px 5px 0px 0px #1e88e5;
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 5px 5px 0px 0px #1e88e5;
+    border: none;
+    border-radius: 10px;
+    overflow: none;
+    resize: none;
+}
+
+body.dark #upload-btn {
+    position: relative;
+    top: 50px;
+	font-size: 15px;
+    border: none;
+	color: #212121;
+	background: #1e88e5;
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 10px;
+	background-size: 200%;
+    transition: .5s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-left: -100px;
+}
+
+body.dark #upload-btn:hover {
     background: #212121;
     color: #f5f5f5;
 }
